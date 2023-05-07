@@ -539,34 +539,11 @@ array('class'=>'generaltable', 'id'=>'mytable')); ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Utilizar las cajas de idiomas
+- --- Vamos a utilizar los checkboxs de languages
+  - Debemos darle acceso al   obj    $CFG
+  - Verificar si los params estan definidos
+  
+	- -- Vamos a modificar la logica del     `bilingue_string_manager.php`      en  /classes
+  	- Para q tome la config de os paquetes de idiom y establezca el orden del language q se establece en esos selects del admin
 
