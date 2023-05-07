@@ -25,3 +25,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Mitología Griega';
+$string['word'] = 'Palabra a cambiar';
+$string['word_desc'] = 'La palabra a cambiar por "Mitología Griega" en negritas.';

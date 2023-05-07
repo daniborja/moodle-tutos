@@ -25,3 +25,5 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['filtername'] = 'Greek Mythology';
+$string['word'] = 'Word to be changed';
+$string['word_desc'] = 'The word to be changed to "Greek Mythology" in bold.';

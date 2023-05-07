@@ -24,14 +24,15 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-class filter_mitologiagriega extends moodle_text_filter {
-	public function filter($text, array $options = array()) {
-        global $CFG;
+// al ser 1 filter es un plugin propio de moodle, x ente tiene configurado el treeadmin, settings y demas. A != del local
+if ($ADMIN->fulltree) {
 
-        // en el settings establecemos la word q queremos cambiar, se guarda en db, lo recuperamos y aqui le metemos la logica
-        $word = $CFG->filter_mitologiagriega_word;
+	// filter, block, theme generan en auto los settings asi q lo usamos directamente - mitologia es la palabra x efaul q se va a buscar
+	$settings->add(new admin_setting_configtext(
+			'filter_mitologiagriega_word',
+			get_string('word', 'filter_mitologiagriega'),
+			get_string('word_desc', 'filter_mitologiagriega'), 'mitología', PARAM_NOTAGS
+		)
+	);
 
-        // Return the modified text: c/v q encuentres el param lo reemplaza
-        return str_replace($word, '<b>Mitología Griega</b>', $text);
-	}
 }

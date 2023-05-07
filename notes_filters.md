@@ -45,6 +45,37 @@
 
 
 ## Filtro: parámetros generale
+- --- Vamos a agregar 1 param genera a nuestro filtro, x eso usaremos el     setting.php
+  - Esto como siempre, lo vamos a conseguir gracias al      `settings.php`
+  - Como es 1 plugin tipo filter/block/theme estos tiene YA configurado el    $settings   y tiene acceso al    admin_tree, ademas q tb pueden tener Parametros Locales
+    - Asi q NO tenemos q configurarlo manualmente como con los    local plugin
+
+  - En este punto, ya tenemos este param/condig/setting para q pueda ser accedido desde el site admin
+    - Como siempre, estos params se guardan en DB como 1 row q toma el valor del    $settings->add()    para asignarselo a esa row
+      - Ese valor se almacena en esa nueva row en la tabla     `mdl_config`   
+
+	- Como ya se almacena en DB este value del param del setting, pues podemos leerlo en donde queramos e implementar Logica con el
+
+
+
+
+
+
+
+## Filtro: Usar el parámetro general
+- --- Ahora q ya lo implementamos y esta en db, pues vamos a usarlo para implementar logica
+  - Para acceder a este lo hacemos a traves del Obj   `$CFG`
+  - Condicionamos la salida/output
+
+
+
+
+
+
+
+
+
+
 
 
 
