@@ -31,6 +31,30 @@ class filter_marcas extends moodle_text_filter {
 	public function filter($text, array $options = array()) {
 		global $CFG;
 		
+		if (!empty($CFG->filter_marcas_ok)) {
+			$okpicurl = new moodle_url('/pix/t/check.png');	// acceder a 1 archivo de moodle con la url
+			$ok = html_writer::tag('img', '',			// build html como recomienda moodle - otra es mustache
+				array('src' => $okpicurl, 'alt' => 'ok'));
+
+			$text = str_replace('@ok@', $ok, $text);
+		}
+
+		if (!empty($CFG->filter_marcas_cross)) {
+			$crosspicurl = new moodle_url('/pix/t/delete.png');
+			$cross = html_writer::tag('img', '', 
+							array('src' => $crosspicurl, 'alt' => 'cross'));
+
+			$text = str_replace('@cross@', $cross, $text);
+		}
+
+		if (!empty($CFG->filter_marcas_award)) {
+			$awardpicurl = new moodle_url('/pix/t/award.png');
+			$award = html_writer::tag('img', '', 
+							array('src' => $awardpicurl, 'alt' => 'award'));
+
+			$text = str_replace('@award@', $award, $text);
+		}
+		
 		return $text;
 	}
 }

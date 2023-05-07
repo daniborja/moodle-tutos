@@ -149,6 +149,9 @@
 	- De nuevo, x ser 1 Plugin de Filtro, SI tiene configurado el   $settings  x defecto, ademas del admin_tree
   	- Establecemos los checkbox del      settings.php
 
+	-- En este punto, ya tenemos los settings/checkbox de los global params q se almacenaran en DB en la tabla   `mdl_config`  en rows con el name q le demos al   $settings->add()
+		- En este punto ya las almacenamos en db, asi q lo q sigue es leer estas global variables y escribir logica con respecto a ellas
+
 
 
 
@@ -157,6 +160,32 @@
 
 
 ## Filtro Marcas: Reemplazar las cadenas con los iconos
+- --- Vamos a Leer los Global Params para poder reemplazar x icons
+	- Para leer estas  global params  usaremos el    `$CFG`
+	- Reemplazamos con la logica de PHP en el      filter.php
+  	- Simplemente como simpre el   ifazo   para validar q NO este empty la variable global
+    	- Traemos el icono propio de Moodle con la    `moodle_url`
+    	- Construimos el HTML como lo recomienda Moodle, con el     `html_writer::tag()`
+    	- modificamos el  $text   con el   str_replace   de php
+
+
+
+
+
+
+
+
+
+## Filtro Imágenes: Copiar los archivos de otro filtro
+- --- 
+
+
+
+
+
+
+
+
 
 
 
