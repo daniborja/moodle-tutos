@@ -66,6 +66,48 @@
 - --- Ahora q ya lo implementamos y esta en db, pues vamos a usarlo para implementar logica
   - Para acceder a este lo hacemos a traves del Obj   `$CFG`
   - Condicionamos la salida/output
+	- Simplemente lo usamos en el    filter.php
+
+
+
+
+
+
+
+
+
+## Filtro: parámetros locales
+- --- A los filtros tb podemos agregarles parametros Locales, en los   Blocks   es muy caracteristico tener la opt para modificar estos local params
+  - Con los filtros es raro usarlos, xq se w con Parametros Globales como acabamos de hacer
+    - Pero si se require, tb se los puede crear en los filters
+  - Podemos crear Parametros Locales creando el      filterlocalsettings.php      en la raiz de la carpeta del plugin
+  - Debemos crear 1 clase con el nombre      mifiltro_filter_local_settings_form.php
+  - La clase debe Extender de la clase       filter_local_settings_form
+		- Dentro de esta clase debemos crear el methdos      definition_inner($msform)
+		
+	- -- Esto habilita el   settings   ese q configuramos para este plugin, ahora Localmente en el Course
+  	- X eso, 1ro accedemos a 1 course > More > Filters
+    	- Y ya vemos q podemos acceder a settings
+			- Esto nos abre el    settings.php   q configuramos
+			- Pero lo aplica Localmente a este curso
+		- Basicamente lo de los   global parmas   pero localmente para 1 course en especifico
+
+
+			-- URL
+				- Filters:
+  				- extends filter_local_settings_form:			https://docs.moodle.org/dev/Filters
+
+
+
+
+
+
+
+## Filtro: leer parámetros locales
+
+
+
+
 
 
 
