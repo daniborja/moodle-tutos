@@ -498,11 +498,30 @@ array('class'=>'generaltable', 'id'=>'mytable')); ?>
 
 
 ## Parámetros para el plugin bilingüe
+- --- Vamos a incluir Params para nuestro plugin
+  - Como es q   Local Plugin   NO tiene x defecto establecido las settings, asi q hay q verificar q esten configuradas manualmente, al igual con el de quitar home
+    - Si W con Plugins x Bloks, podemos W con Parametros x Block y GLobaless
+		- Los Plugins Locales solo tenemos Parametros Globales
+  - Creamos la   Page   de configuracion del local plugin xq no la tiene configurada x default
+  - Creamos los params
+  - Agregamos 1 campo de configuracion a la config de la pagina
+
+	- En    `settings.php`    es donde guardaremos los global params
+  	- Usamos el     STRING API   para tomar todos los Language Packs instalados en moodle
+  		- Una vez q los tenemos construimos los selects
+
+
+		-- URL:
+			- String API:			https://docs.moodle.org/dev/String_API
 
 
 
 
 
+
+
+## Activar y desactivar el plugin bilingüe
+- ---
 
 
 
