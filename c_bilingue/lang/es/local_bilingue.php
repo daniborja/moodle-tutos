@@ -22,11 +22,10 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
 $string['pluginname'] = 'Bilingüe';
 $string['settingbilingual'] = 'Desplegar dos idiomas';
-$string['removebilingual'] = 'Remover cadenas bilingües';
-$string['removebilingual_desc'] = 'Remover cadenas bilingües Description';
+$string['enabledbilingual'] = 'Activar cadenas bilingües';
+$string['enabledbilingual_desc'] = 'Activar cadenas bilingües Description';
 $string['primarylang'] = 'Primer idioma';
 $string['primarylang_desc'] = 'Selecciona primer idioma';
 $string['secondarylang'] = 'Segundo idioma';

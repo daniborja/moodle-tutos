@@ -18,16 +18,15 @@
  * Cadenas de idioma 'en'
  *
  * @package   local_bilingue
- * @copyright 2023 Adrian <adrian@example.com>
+ * @copyright 2021 Su nombre
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'Bilingual';
-$string['settingbilingual'] = 'Desplegar dos idiomas';
-$string['enabledbilingual'] = 'Enabled cadenas bilingües';
-$string['enabledbilingual_desc'] = 'Enabled cadenas bilingües Description';
-$string['primarylang'] = 'Primer idioma';
-$string['primarylang_desc'] = 'Selecciona primer idioma';
-$string['secondarylang'] = 'Segundo idioma';
-$string['secondarylang_desc'] = 'Selecciona segundo idioma';
-
+$string['settingbilingual'] = 'Display two languages';
+$string['enabledbilingual'] = 'Enabled bilingual strings';
+$string['enabledbilingual_desc'] = 'Check the box to enabled bilingual strings';
+$string['primarylang'] = 'Primary lang';
+$string['primarylang_desc'] = 'Select primary lang';
+$string['secondarylang'] = 'Secondary lang';
+$string['secondarylang_desc'] = 'Select secondary lang';

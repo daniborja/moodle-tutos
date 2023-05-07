@@ -15,19 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Cadenas de idioma 'en'
+ * Archivo de versiones
  *
  * @package   local_bilingue
- * @copyright 2023 Adrian <adrian@example.com>
+ * @copyright 2021 Su nombre
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Bilingual';
-$string['settingbilingual'] = 'Desplegar dos idiomas';
-$string['enabledbilingual'] = 'Enabled cadenas bilingües';
-$string['enabledbilingual_desc'] = 'Enabled cadenas bilingües Description';
-$string['primarylang'] = 'Primer idioma';
-$string['primarylang_desc'] = 'Selecciona primer idioma';
-$string['secondarylang'] = 'Segundo idioma';
-$string['secondarylang_desc'] = 'Selecciona segundo idioma';
-
+$plugin->component = 'local_bilingue';
+$plugin->version = 2021110900;
+$plugin->requires = 2019052000; // Moodle 3.7

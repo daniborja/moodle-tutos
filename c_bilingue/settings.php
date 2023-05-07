@@ -40,9 +40,9 @@ if ($hassiteconfig) {
 	// Agregar un campo de configuración a la configuración de esta página
 	$settings->add(
 		new admin_setting_configcheckbox(
-			'local_bilingue/remove', 
-			get_string('removebilingual', 'local_bilingue'),
-			get_string('removehome_desc', 'local_bilingue'), 
+			'local_bilingue_enabled', 
+			get_string('enabledbilingual', 'local_bilingue'),
+			get_string('enabledbilingual_desc', 'local_bilingue'), 
 			0)
 	);
 

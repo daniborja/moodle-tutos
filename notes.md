@@ -521,7 +521,20 @@ array('class'=>'generaltable', 'id'=>'mytable')); ?>
 
 
 ## Activar y desactivar el plugin bilingüe
-- ---
+- --- Vamos a establecer las      settings/params      para activar/desactivar el plugin bilingue
+  - Vamos a permitirle al Admin el poder activar/desactivar este plugin
+  - Debemos darle Acceso al obj   	`$CFG`
+	- Los checkbox de estos settings si NO estan selected NO existen
+
+
+- --- Vamos a w sobre el    `bilingue_string_manager`     de   /classes
+  - Esto para verificar con el     `$CFG`     si se ha dado check al checkbox q habilita/deshabilita el bilingue
+  	- En base a eso aplico la logica de interes y demas
+    	- Estos checkbox y demas params de configuracion, se almacenan en DB
+    	- X eso podemos leerlos, y en base a eso reaccionar
+
+
+
 
 
 

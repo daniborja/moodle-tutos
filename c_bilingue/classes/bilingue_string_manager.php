@@ -38,17 +38,27 @@ class bilingue_string_manager extends \core_string_manager_standard {
     * @return string 
     */ 
 
-		// @Override de este method
+		// // @Override de este method
+    // https://docs.moodle.org/dev/String_API
     public function get_string($identifier, $component = '', $a = null, $lang = null) { 
+      global $CFG;
 
-			$string = parent::get_string($identifier, $component, $a, 'en'); 
+      $string;
 
-			$es_mx = parent::get_string($identifier, $component, $a, 'es'); 
-
-			if(strlen($es_mx) > 0) { 
-					$string .= ' | ' . $es_mx; 
-			} 
+      // verificar el status del checkbox en el admin
+      if (!empty($CFG->local_bilingue_enabled)) {
+        $string = parent::get_string($identifier, $component, $a, 'en'); 
+        
+        $es_mx = parent::get_string($identifier, $component, $a, 'es'); 
+        
+        if(strlen($es_mx) > 0) { 
+          $string .= ' | ' . $es_mx; 
+        } 
+      } else {
+        $string = parent::get_string($identifier, $component, $a, $lang);
+      }
 
 			return $string; 
 		} 
 }
+
