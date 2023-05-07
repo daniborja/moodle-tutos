@@ -125,6 +125,13 @@
 
 
 ## Filtro Marcas: archivos básicos
+- --- Vamos a Reemplazar alguna palabra con 1 Icon propio de Moodle    /pix/t
+  - Creamos el dir de    /marcas    
+    - Creamos el    filter.php
+      - Q por el momento solo va a ser copy/paste de la doc
+		- Creamos el    version.php
+		- Creamos el    /lang
+  		- Y asi tenemos lso 3   file required    q requiere como min un filter plugin para poder ser instalado
 
 
 
@@ -133,6 +140,14 @@
 
 
 
+## Filtro Marcas: parámetros globales
+- --- Como siempre, para parametros globales vamos a usar el       `settings.php`
+  - Creamos el     setting.php
+  - Necesitamos mas language packs
+  - Todo con languales se almacena en la cache, asi q hay q purgarlo para ver cmabios
+
+	- De nuevo, x ser 1 Plugin de Filtro, SI tiene configurado el   $settings  x defecto, ademas del admin_tree
+  	- Establecemos los checkbox del      settings.php
 
 
 
@@ -141,12 +156,7 @@
 
 
 
-
-
-
-
-
-
+## Filtro Marcas: Reemplazar las cadenas con los iconos
 
 
 
