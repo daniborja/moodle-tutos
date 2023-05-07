@@ -104,8 +104,27 @@
 
 
 ## Filtro: leer parámetros locales
+- --- Al leer los parametros locales vamos a tener 1 peque problem de estrcutura x moodle
+  - Estos   Local Params    se leen en el obj     $this->localconfig
+    - El problema es q aveces si los lee, y otras no. X eso no se W mucho con filtros y local params
+  - No se recomienda los locales x este tipo de bug q tiene moodle
 
 
+	- print_object(): de utils, para poder imprimir algo en el front - logger trucho
+
+
+		-- URL:
+			- Filter Plugins
+  			- $this->localconfig:			https://docs.moodle.org/dev/Filters
+
+
+
+
+
+
+
+
+## Filtro Marcas: archivos básicos
 
 
 

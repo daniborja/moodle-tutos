@@ -25,13 +25,30 @@
 defined('MOODLE_INTERNAL') || die();
 
 class filter_mitologiagriega extends moodle_text_filter {
+/* leer global param de toda la vida
 	public function filter($text, array $options = array()) {
-        global $CFG;
+			global $CFG;
 
-        // en el settings establecemos la word q queremos cambiar, se guarda en db, lo recuperamos y aqui le metemos la logica
-        $word = $CFG->filter_mitologiagriega_word;
+			// en el settings establecemos la word q queremos cambiar, se guarda en db, lo recuperamos y aqui le metemos la logica
+			$word = $CFG->filter_mitologiagriega_word;
 
-        // Return the modified text: c/v q encuentres el param lo reemplaza
-        return str_replace($word, '<b>Mitología Griega</b>', $text);
+			// Return the modified text: c/v q encuentres el param lo reemplaza
+			return str_replace($word, '<b>Mitología Griega</b>', $text);
+	} */
+
+	// local param - tiener ciertos bugs. NOOO leer de db, xq x c/word haria 1 consulta a db para verificar en donde hacer el cambio en el front
+	public function filter($text, array $options = array()) {
+			global $CFG;
+
+			// loguear algo en moodle
+			// print_object($this);
+
+			if (isset($this->localconfig['word'])) {
+				$word = $this->localconfig['word'];
+			} else {
+					$word = $CFG->filter_mitologiagriega_word;
+			}
+
+			return str_replace($word, '<b>Mitología Griega</b>', $text);
 	}
 }
