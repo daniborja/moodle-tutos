@@ -195,6 +195,9 @@
 
 
 ## Filtro Imágenes: Crear los parámetros del nuevo filtro
+- --- Modificamos lo copiado para implementar la funcionalidad
+  - Necesitamos reutilizar el codigo copiado (refactoring o refactorizar)
+
 
 
 
