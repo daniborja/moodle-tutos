@@ -177,7 +177,15 @@
 
 
 ## Filtro Imágenes: Copiar los archivos de otro filtro
-- --- 
+- --- Vamos a crear 1 Plugin Basandonos en otro q ya existe, esto es 1 practica muy comun
+  - Vamos a hacer 1 copia de    /dir    y renombrarlo al nombre del nuevo plugin
+  - cambiar el name en   version.php y settings.php
+  - Cambiar el archivo de cadenas de idiomas y el nombre del filtro
+
+
+	- -- Copiamos el de   marcas   y lo renombramos por    imagenes
+  	- Las imagenes van dentro del plugin dir, y deben ir en el     `/pix`
+			- pix es 1 estandar
 
 
 
@@ -186,7 +194,7 @@
 
 
 
-
+## Filtro Imágenes: Crear los parámetros del nuevo filtro
 
 
 
